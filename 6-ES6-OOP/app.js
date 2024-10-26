@@ -36,9 +36,16 @@ emp.showInfos();
 //Statik nedir
 
 class Math{
-     static cube(x){
+    static cube(x){
         console.log(x*x*x);
+    }
+
+    sqrt(x){
+        console.log(x*x)
     }
 }
 
-Math.cube(3); // statik yapmasaydım new ile nesne oluşturmam gerekiyordu
+const obj = new Math;
+Math.cube(3); // statik yapmasaydım new ile obje oluşturmam gerekiyordu
+
+//obje oluşturarak statik metodlara erişemeyiz
