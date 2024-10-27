@@ -49,3 +49,27 @@ const obj = new Math;
 Math.cube(3); // statik yapmasaydım new ile obje oluşturmam gerekiyordu
 
 //obje oluşturarak statik metodlara erişemeyiz
+
+//ES5deki kalıtımı object.create prototypelarla yapıyoruz 
+// Inheritance(kalıtım) 
+
+class Person{  //SuperClass
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
+    showInfos(){
+        console.log("İsim:"+this.name+" Yaş:"+this.age);
+    }
+}
+
+class Employee2 extends Person{ //SubClass
+    constructor(name,age,salary){
+        super(name,age);
+        this.salary = salary;
+    }
+}
+
+const emp2 = new Employee2("Sude",23,5000);
+console.log(emp2); 
+emp2.showInfos();
