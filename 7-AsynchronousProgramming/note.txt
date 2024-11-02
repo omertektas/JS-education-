@@ -1,0 +1,29 @@
+----------Asenkron programlama-------------
+
+Asenkron programlama, işlemlerin sırayla ve bekleme olmaksızın 
+gerçekleştirilebilmesini sağlayan bir programlama modelidir. 
+Bu modelde, bir işlem tamamlanana kadar beklemek yerine 
+ işlemler başlatılır, böylece uygulama daha verimli çalışır ve 
+kullanıcıya daha hızlı yanıt verir.
+
+Asenkron programlama, özellikle uzun süre bekleme gerektiren 
+(örneğin bir sunucudan veri çekme) işlemler için faydalıdır.
+Bu tarz işlemler sırasında, programın diğer bölümlerinin 
+duraksamasına gerek kalmaz. Modern dillerde, asenkron programlama 
+genellikle callback fonksiyonları, promiseler veya async/await gibi 
+yapılarla gerçekleştirilir.
+
+-----Promise Nedir-----
+
+Promise, JavaScript'te asenkron işlemleri yönetmek için kullanılan bir nesnedir.
+ Asenkron bir işlem gerçekleştikten sonra başarıyla sonuçlandığında veya 
+ hata ile karşılaşıldığında çalıştırılacak işlemleri belirlemenize olanak 
+ tanır. Promise, temel olarak üç durumda olabilir:
+
+Pending (Beklemede): Promise oluşturulduğunda, işlem henüz tamamlanmamış durumdadır.
+Fulfilled (Başarılı): İşlem başarıyla tamamlanmış ve beklenen sonuç elde edilmiştir.
+Rejected (Reddedildi): İşlem sırasında bir hata oluşmuş ve işlem tamamlanamamıştır.
+
+Promise yapısında, .then() metodu başarıyla tamamlandığında, 
+.catch() metodu ise hata oluştuğunda çalışır. 
+Bu sayede, asenkron işlemler daha okunabilir ve yönetilebilir hale gelir.
